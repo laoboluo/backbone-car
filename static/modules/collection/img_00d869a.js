@@ -1,0 +1,1 @@
+define("static/modules/collection/img",function(t,a,e){var o=t("static/modules/model/img"),i=Backbone.Collection.extend({model:o,imageId:0,fetchData:function(){var t=this;$.get("data/imageList.json",function(a){if(a&&0===a.errno){a.data.sort(function(){return Math.random()>.5?1:-1});for(var e=0;e<a.data.length;e++)a.data[e].id=++t.imageId;t.add(a.data)}})}});e.exports=i});

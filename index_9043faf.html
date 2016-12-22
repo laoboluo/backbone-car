@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<title>xxx4s店车展</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/pkg/css/app_4e97a38.css" />
+</head>
+<body>
+<div id="app" style="display: none;">
+	<section class="list" >
+		<header class="header">
+			<span class="login">联系我们</span>
+			<div class="go-back">
+				<span class="arrow"><span class="arrow green"></span></span>
+			</div>
+			<h1>xxx4s店车展</h1>
+		</header>
+		<div class="search">
+			<input type="text" placeholder="搜索你想要的图片">
+			<span>搜一搜</span>
+		</div>
+		<div id="list">
+			<ul class="type clearfix" id="type">
+			<li data-id="0" class="cur">本田冠道</li>
+			<li data-id="1">本田雅阁</li>
+			<li data-id="2">奥德赛</li>
+			<li data-id="3">奥迪A5</li>
+			<li data-id="6">奥迪Q5</li>
+			<li data-id="5">奥迪A6</li>
+			<li data-id="4">最美国产车</li>
+			<li data-id="7">你怕不怕</li>
+		</ul>
+		</div>
+		
+		<div class="image-container">
+			<div class="left-container">
+			</div>
+			<div class="right-container">
+			</div>
+		</div>
+		<span class="go-top">返回<br>顶部</span>
+	</section>
+	<!-- 给layer定义一个位置，供其渲染 -->
+	<section class="layer"></section>
+</div>
+<script type="text/template" id="tpl_layer">
+	<div class="layer-container" style="<%=style%>">
+		<ul>
+			<li><img src="<%=url%>" alt=""></li>
+			<li><img src="<%=url%>" alt=""></li>
+			<li><img src="<%=url%>" alt=""></li>
+		
+		</ul>
+		
+	</div>
+	<header class="header hide">
+		<div class="go-back">
+			<span class="arrow"><span class="arrow green"></span></span>
+		</div>
+		<h1><%=title%></h1>
+	</header>
+</script>
+
+
+<script type="text/javascript" src="/static/mod_2b1d325.js"></script>
+<script type="text/javascript" src="/static/pkg/js/app_a730e10.js"></script>
+<script type="text/javascript" src="/static/pkg/js/lib_22e03a9.js"></script>
+<script type="text/javascript">
+// 写配置
+var app = require("static/modules/app")
+app();
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+define("static/modules/model/img",function(i,t,e){var d=($(window).width()-18)/2,n=Backbone.Model.extend({initialize:function(i){h=d/i.width*i.height,this.attributes.viewWidth=d,this.attributes.viewHeight=h}});e.exports=n});
